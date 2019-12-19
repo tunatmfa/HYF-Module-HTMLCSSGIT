@@ -1,0 +1,26 @@
+1. How do I create a hidden file or folder? How do I display it in the CLI?
+
+mkdir .HiddenFolder.txt creates a hidden folder named HiddenFolder.
+
+touch .HiddenFile.txt creates a hidden file named HiddenFile.
+
+I can display hidden files by typing ls -a
+
+2. How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+I can create multiple nested directories by writing mkdir -p. In other words I can create four folders by mkdir -p parent/child1/child2/child3
+
+3. How do I append a message to a file, without a newline character, so the output would be:
+
+echo "first message" >> read.txt
+
+$ cat read.txt
+first message
+
+$ echo "second message" >> read.txt
+
+$ cat read.txt
+first message
+second message
+
+
